@@ -467,18 +467,135 @@ aside{
     background-color: rgb(54, 54, 54);
 }
 
+footer{
+    margin-top: 5%;
+    padding-top: 3%;
+    background-color: rgb(177, 177, 177);
+}
+
+#footerConteudo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 5%;
+}
+
 #metodosPagamento{
     width: 20%;
 }
 
+#metodosPagamento div{
+    margin-top: 7%;
+}
+
 #metodosPagamento img{
-    height: 5%;
-    width: 5%;
+    height: 34%;
+    width: 34%;
 }
 
 #metodosPagamento #mastercard{
-    height: 3.5%;
-    width: 3.5%;
+    height: 24%;
+    width: 24%;
+}
+
+#metodosPagamento #pix{
+    height: 24%;
+    width: 24%;
+}
+
+#metodosPagamento #boleto{
+    height: 31%;
+    width: 31%;
+    margin-top: 3%;
+}
+
+#metodosPagamento2{
+    display: flex;
+    flex-direction: row;
+}
+
+#metodosPagamento2 img{
+    margin-right: 5%;
+}
+
+#pagarNaEntrega{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#pagarNaEntrega img{
+    height: 28%;
+    width: 28%;
+    margin-right: 5%;
+}
+
+#links{
+    width: 20%;
+}
+
+#links a{
+    margin-top: 7%;
+}
+
+#divRedeSociais{
+    width: 20%;
+}
+
+#redeSocial{
+    margin-top: 7%;
+}
+
+#redeSocial img{
+    height: 28%;
+    width: 28%;
+}
+
+#redeSocial #tumbler{
+    height: 23.5%;
+    width: 23.5%;
+}
+
+#contatoFooter{
+    width: 20%;
+}
+
+#contatoFooter > p{
+    margin-top: 7%;
+}
+
+#email{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 7%;
+}
+
+#email img{
+    height: 12%;
+    width: 12%;
+    margin-right: 5%;
+}
+
+#phone{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 7%;
+}
+
+#phone img{
+    height: 14%;
+    width: 14%;
+    margin-right: 5%;
+}
+
+#copyright{
+    padding: 2%;
+    background-color: rgb(221, 221, 221);
+    text-align: center;
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 1503px) {
@@ -513,12 +630,6 @@ aside{
         height: 35px;
         width: 42.5%;
         padding: 0.1%;
-    }
-}
-
-@media only screen and (max-height: 801px) {
-    .carousel-item img{
-        height: 467px;
     }
 }
 
@@ -687,6 +798,12 @@ aside{
     }
 }
 
+@media only screen and (max-height: 801px) {
+    .carousel-item img{
+        height: 400px;
+    }
+}
+
 @media only screen and (max-width: 575.5px) {
     #lateralEsquerda2{
         justify-content: start;
@@ -727,6 +844,9 @@ aside{
         height: 50%;
         width: 80%;
     }
+    .carousel-item img{
+        height: 330px;
+    }
     #responsivoSearchNews aside{
         display: none;
     }
@@ -746,6 +866,12 @@ aside{
     }
 }
 
+@media only screen and (max-width: 484px) {
+    .carousel-item img{
+        height: 280px;
+    }
+}
+
 @media only screen and (max-width: 393.5px) {
     #conteudoCards{
         flex-direction: column;
@@ -757,5 +883,11 @@ aside{
     .cards{
         margin-top: 10%;
         width: 60%;
+    }
+}
+
+@media only screen and (max-width: 348px) {
+    .carousel-item img{
+        height: 240px;
     }
 }
