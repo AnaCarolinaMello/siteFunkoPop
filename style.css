@@ -476,13 +476,20 @@ footer{
 #footerConteudo{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     padding-bottom: 5%;
 }
 
+.flexFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+}
+
 #metodosPagamento{
-    width: 20%;
+    width: 50%;
+    margin-right: 10%;
 }
 
 #metodosPagamento div{
@@ -532,7 +539,7 @@ footer{
 }
 
 #links{
-    width: 20%;
+    width: 50%;
 }
 
 #links a{
@@ -540,7 +547,8 @@ footer{
 }
 
 #divRedeSociais{
-    width: 20%;
+    width: 50%;
+    margin-right: 10%;
 }
 
 #redeSocial{
@@ -558,7 +566,7 @@ footer{
 }
 
 #contatoFooter{
-    width: 20%;
+    width: 50%;
 }
 
 #contatoFooter > p{
@@ -804,6 +812,33 @@ footer{
     }
 }
 
+@media only screen and (max-width: 801px) {
+    #footerConteudo{
+        flex-direction: column;
+    }
+    .flexFooter{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 5%;
+    }
+    #metodosPagamento{
+        width: 40%;
+        margin-right: 0;
+    }
+    #links{
+        width: 40%;
+    }
+    #divRedeSociais{
+        width: 40%;
+        margin-right: 0;
+    }
+    #contatoFooter{
+        width: 40%;
+    }
+}
+
 @media only screen and (max-width: 575.5px) {
     #lateralEsquerda2{
         justify-content: start;
@@ -869,6 +904,69 @@ footer{
 @media only screen and (max-width: 484px) {
     .carousel-item img{
         height: 280px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .flexFooter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    #metodosPagamento{
+        align-items: center;
+        width: 80%;
+        margin-top: 4%;
+    }
+    #links{
+        align-items: center;
+        width: 80%;
+        margin-top: 7%;
+    }
+    #divRedeSociais{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin-top: 7%;
+    }
+    #redeSocial{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #redeSocial img{
+        height: 20%;
+        width: 20%;
+    }
+
+    #redeSocial #tumbler{
+        height: 16.5%;
+        width: 16.5%;
+    }
+    #contatoFooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin-top: 7%;
+    }
+    #email{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    #phone{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    #phone img {
+        margin-right: 3%;
     }
 }
 
