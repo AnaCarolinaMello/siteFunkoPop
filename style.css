@@ -10,8 +10,8 @@ html{
 
 body{
     margin: 0;
-    background: rgb(80,73,200);
-    background: linear-gradient(90deg, rgba(80,73,200,1) 0%, rgba(93,154,205,1) 35%, rgba(206,247,252,1) 100%);
+    background: rgb(171,167,255);
+background: linear-gradient(90deg, rgba(171,167,255,1) 0%, rgba(168,215,255,1) 45%, rgba(227,252,255,1) 100%);
 }
 
 #conteudo{
@@ -177,7 +177,7 @@ p{
     position: absolute;
     height: 20px;
     width: 20px;
-    background: radial-gradient(ellipse at center,rgb(206, 247, 252) 0%,rgb(206, 247, 252) 0%,rgb(206, 247, 252) 67%,rgba(0,0,0,0) 70%);
+    background: radial-gradient(ellipse at center,rgb(255, 255, 255) 0%,rgb(255, 255, 255) 0%,rgb(255, 255, 255) 67%,rgba(0,0,0,0) 70%);
     margin-bottom: 55px;
     margin-left: 63px;
 }
@@ -381,6 +381,20 @@ main{
     width: 50%;
     border-bottom: rgb(0, 93, 133) solid 3px;
     padding-bottom: 2%;
+}
+
+#banguela{
+    height: 56.90%;
+    width: 46.90%;
+    padding: 6%;
+    border-bottom: rgb(0, 93, 133) solid 3px;
+}
+
+#ellie{
+    height: 47%;
+    width: 37%;
+    padding: 6%;
+    border-bottom: rgb(0, 93, 133) solid 3px;
 }
 
 .precoCard{
@@ -921,6 +935,18 @@ footer{
     }
     #contatoFooter{
         width: 40%;
+    }
+}
+@media only screen and (max-width: 656.5px) {
+    #conteudoCards{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .cards{
+        width: 24%;
+        margin-left: 4%;
     }
 }
 
