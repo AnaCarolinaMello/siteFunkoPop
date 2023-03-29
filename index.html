@@ -96,15 +96,15 @@
           <div id="search" class="bg-info">
             <h5>Encontre rápido - Escolha seu produto</h5>
             <p>Encontre o produto certo com o preço certo</p>
-            <select name="Texto" id="" class="selectF">
-              <option value="" disabled selected>Tipo</option>
+            <select name="Texto" id="tipos" class="selectF">
+              <option value="tipo" disabled selected>Tipo</option>
               <option value="">Acessórios</option>
               <option value="">POPs</option>
               <option value="">Acessórios</option>
               <option value="">Broches</option>
             </select>
-            <select name="Texto" id="" class="selectF">
-              <option value="" disabled selected>Categoria</option>
+            <select name="Texto" id="categorias" class="selectF">
+              <option value="categoria" disabled selected>Categoria</option>
               <option>Todos</option>
               <option>Disney</option>
               <option>Marvel</option>
@@ -114,13 +114,13 @@
               <option>Filmes</option>
             </select>
             <select name="Texto" id="estados" class="selectF">
-              <option value="" disabled selected>Estado</option>
+              <option value="estado" disabled selected>Estado</option>
             </select>
             <div id="divPreco">
               <span>$</span>
-              <input type="number" placeholder="De">
+              <input id="inputDe" type="number" placeholder="De">
               <span>$</span>
-              <input type="number" placeholder="Até">
+              <input id="inputAte" type="number" placeholder="Até">
             </div>
             <div id="botaoBusca">
               <img src="img/search-icon.svg" id="searchIconBusca">
@@ -130,8 +130,8 @@
           <div class="newsLetter bg-info">
             <h4>Portal de Notícias</h4>
             <p>Se cadastre para receber as notícias</p>
-            <input>
-            <button>Se junte!</button>
+            <input id="inputNewsLetter1">
+            <button id="buttonNewsLetter1">Se junte!</button>
           </div>
         </div>
         <aside>
@@ -466,8 +466,8 @@
       <div class="newsLetter bg-info">
         <h4>Portal de Notícias</h4>
         <p>Se cadastre para receber as notícias</p>
-        <input>
-        <button>Se junte!</button>
+        <input id="inputNewsLetter2">
+        <button id="buttonNewsLetter2">Se junte!</button>
       </div>
     </aside>
   </main>
