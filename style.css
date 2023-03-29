@@ -5,12 +5,13 @@
 }
 
 html{
-
   width: 100% ; 
 }
 
 body{
     margin: 0;
+    background: rgb(80,73,200);
+    background: linear-gradient(90deg, rgba(80,73,200,1) 0%, rgba(93,154,205,1) 35%, rgba(206,247,252,1) 100%);
 }
 
 #conteudo{
@@ -19,11 +20,12 @@ body{
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    padding-bottom: 2%;
+    padding-top: 0.5%;
+    padding-bottom: 1%;
     right: 0;
 }
 
-input:focus, select:focus {
+input:focus, select:focus, button:focus {
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: 0;
@@ -42,6 +44,9 @@ input:focus, select:focus {
 
 #lateralEsquerda p{
     margin-bottom: 4%;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
 }
 
 
@@ -59,21 +64,31 @@ input:focus, select:focus {
 #logo{
     height: 50%;
     width: 9%;
+    filter: invert(100%)
 }
 
 #pesquisa{
     width: 300px;
     padding: 1%;
-    border: 1px solid black;
+    border: 1px solid rgb(0, 65, 93);
 }
 
 .searchIconPesquisa{
     height: 40%;
     margin-right: 2%;
+    filter: invert();
 }
 
 #pesquisar{
     width: 120px;
+    background-color: rgb(0, 93, 133);
+    color: white;
+    border: solid rgb(0, 93, 133);
+}
+
+#pesquisar:hover{
+    background-color: rgb(0, 65, 93);
+    border: solid rgb(0, 65, 93);
 }
 
 #lateral{
@@ -91,15 +106,25 @@ input:focus, select:focus {
     width: 420px;
 }
 
+a:not([href]):not([tabindex]) {
+    color: white;
+    text-decoration: none;
+}
+
+a:not([href]):not([tabindex]):hover {
+    color: rgb(177, 196, 214);
+    text-decoration: none;
+}
+
 .menuLinks{
-    border-right: 2px solid rgb(129, 129, 129); 
+    color: white;
+    border-right: 2px solid white; 
     padding-left: 2%;   
     padding-right: 2%;
 }
 
-.menuLinks{
+.menuLinks:hover{
     cursor: pointer;
-    color: rgb(100, 100, 100);
 }
 
 #acompanharP{
@@ -124,6 +149,7 @@ p{
 }
 
 #informacoesCliente p{
+    color: white;
     padding-left: 2%;
     padding-right: 2%;
 }
@@ -151,7 +177,7 @@ p{
     position: absolute;
     height: 20px;
     width: 20px;
-    background: radial-gradient(ellipse at center,rgb(155, 155, 155) 0%,rgb(155, 155, 155) 0%,rgb(155, 155, 155) 67%,rgba(0,0,0,0) 70%);
+    background: radial-gradient(ellipse at center,rgb(206, 247, 252) 0%,rgb(206, 247, 252) 0%,rgb(206, 247, 252) 67%,rgba(0,0,0,0) 70%);
     margin-bottom: 55px;
     margin-left: 63px;
 }
@@ -160,7 +186,7 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(75, 75, 75);
+    background-color: rgb(0, 93, 133);
     padding-top: 7%;
     padding-bottom: 7%;
     border-radius: 12px;
@@ -170,16 +196,19 @@ p{
 
 #conteudoDivCarrinho:hover{
     cursor: pointer;
+    background-color: rgb(0, 65, 93);
 }
 
 #carrinhoIcon{
     height: 30%;
     width: 30%;
+    filter: invert();
 }
 
 #textoCarrinho{
     text-align: center;
     margin-left: 4%;
+    color: white;
 }
 
 section{
@@ -212,9 +241,9 @@ section{
     justify-content: center;
     height: fit-content;
     width: 100%;
-    background: rgb(129, 129, 129);
-    border: 1px solid black;
-    padding: 2%;
+    border: 1px solid rgb(0, 65, 93);
+    padding: 4%;
+    color: white;
 }
 
 #search h5{
@@ -240,6 +269,11 @@ section{
     height: 35px;
     width: 45%;
     padding: 0.1%;
+    border: 1px solid white;
+}
+
+#divPreco span{
+    color: rgb(0, 17, 24);
 }
 
 #botaoBusca{
@@ -251,18 +285,25 @@ section{
     height: 10%;
     padding: 2%;
     margin-bottom: 3%;
-    background-color: rgb(67, 67, 67);
+    background-color: rgb(0, 93, 133);
     border-radius: 9px;
+}
+
+#botaoBusca:hover{
+    cursor: pointer;
+    background-color: rgb(0, 65, 93);
 }
 
 #searchIconBusca{
     height: 90%;
     width: 4%;
     margin-right: 2%;
+    filter: invert();
 }
 
-/* #textoBusca{
-} */
+#textoBusca{
+    color: white;
+}
 
 #funkoCarrocel{
     position: relative !important;
@@ -274,7 +315,6 @@ section{
 }
 
 .carousel-item {
-     /* altura desejada */
      object-fit: cover;
      
 }
@@ -293,6 +333,8 @@ main{
     flex-direction: row;
     justify-content: space-around;  
     margin-top: 4%;
+    padding-top: 4%;
+    padding-bottom: 4%;
 }
 
 #footerConteudo{
@@ -321,14 +363,19 @@ main{
     padding-bottom: 2%;
     margin-top: 4%;
     margin-left: 2%;
-    border: rgb(151, 151, 151) solid 3px;
+    background-color: white;
+    /* border: rgb(0, 93, 133) solid 3px; */
     border-radius: 10px;
+}
+
+.cards:hover{
+    cursor: pointer;
 }
 
 .imagemCard{
     height: 60%;
     width: 50%;
-    border-bottom: rgb(151, 151, 151) solid 3px;
+    border-bottom: rgb(0, 93, 133) solid 3px;
     padding-bottom: 2%;
 }
 
@@ -377,6 +424,12 @@ aside{
     width: 25%;
 }
 
+aside h2{
+    color: white;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(0, 93, 133);
+}
+
 #conteudoAside{
     display: flex;
     flex-direction: column;
@@ -385,8 +438,7 @@ aside{
     margin-top: 4%;
     padding-top: 8%;
     padding-bottom: 8%;
-    background-color: rgb(178, 178, 178);
-    border: 1px solid black;
+    border: 1px solid rgb(0, 65, 93);
 }
 
 .cardsAside{
@@ -430,9 +482,14 @@ aside{
     margin-top: 7%;
     padding: 2%;
     border-radius: 6px;
-    background-color: rgb(79, 79, 79);
+    background-color: rgb(0, 93, 133);
     color: white;
     border: none;
+}
+
+.vejaMais:hover{
+    cursor: pointer;
+    background-color: rgb(0, 65, 93);
 }
 
 .newsLetter{
@@ -441,8 +498,8 @@ aside{
     width: 100%;
     padding: 5%;
     margin-top: 6%;
-    background-color: rgb(178, 178, 178);
-    border: 1px solid black;
+    border: 1px solid rgb(0, 65, 93);
+    color: white;
 }
 
 .newsLetter p{
@@ -458,17 +515,16 @@ aside{
 .newsLetter button{
     padding: 2%;
     border-radius: 6px;
-    background-color: rgb(79, 79, 79);
+    background-color: rgb(0, 93, 133);
     color: white;
     border: none;
 }
 
 .newsLetter button:hover{
-    background-color: rgb(54, 54, 54);
+    background-color: rgb(0, 65, 93);
 }
 
 footer{
-    margin-top: 5%;
     padding-top: 3%;
     background-color: rgb(177, 177, 177);
 }
@@ -478,6 +534,10 @@ footer{
     flex-direction: row;
     justify-content: space-evenly;
     padding-bottom: 5%;
+}
+
+#footerConteudo h3{
+    color: rgb(206, 247, 252);
 }
 
 .flexFooter{
@@ -536,6 +596,11 @@ footer{
     height: 20%;
     width: 20%;
     margin-right: 5%;
+    filter: invert();
+}
+
+#pagarNaEntrega p{
+    color: white;
 }
 
 #links{
@@ -544,6 +609,10 @@ footer{
 
 #links a{
     margin-top: 7%;
+}
+
+#links a:hover{
+    cursor: pointer;
 }
 
 #divRedeSociais{
@@ -558,15 +627,20 @@ footer{
 #redeSocial img{
     height: 22%;
     width: 22%;
+    filter: invert();
 }
 
-#redeSocial #tumbler{
-    height: 18.5%;
-    width: 18.5%;
+#redeSocial #twitter{
+    height: 18%;
+    width: 18%;
 }
 
 #contatoFooter{
     width: 50%;
+}
+
+#contatoFooter{
+    color: white;
 }
 
 #contatoFooter > p{
@@ -580,10 +654,12 @@ footer{
     margin-top: 7%;
 }
 
+
 #email img{
     height: 12%;
     width: 12%;
     margin-right: 5%;
+    filter: invert();
 }
 
 #phone{
@@ -597,13 +673,15 @@ footer{
     height: 14%;
     width: 14%;
     margin-right: 5%;
+    filter: invert();
 }
 
 #copyright{
     padding: 2%;
-    background-color: rgb(221, 221, 221);
+    background-color: #79bbcf;
     text-align: center;
     font-weight: bold;
+    color: #cef7fc;
 }
 
 @media only screen and (max-width: 1503px) {
@@ -813,6 +891,9 @@ footer{
 }
 
 @media only screen and (max-width: 801px) {
+    main{
+        margin-bottom: 4%;
+    }
     #footerConteudo{
         flex-direction: column;
     }
@@ -866,7 +947,7 @@ footer{
     }
     #pesquisar{
         position: absolute;
-        height: 38px;
+        height: 38.5px;
         width: 15%;
         padding-bottom: 1.5%;
     }
